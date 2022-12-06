@@ -9,6 +9,7 @@ const Padbank = (props) => {
                 id={id}
                 sound={props.sounds[i]}
                 playAudio={props.playAudio}
+                message={props.message}
             />
         )
     })

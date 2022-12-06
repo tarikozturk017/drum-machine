@@ -1,17 +1,82 @@
+.App {
+    margin: 50px auto;
+    outline: 5px solid orange;
+    position: relative;
+    width: 660px;
+    text-align: center;
+    background-color: #b3b3b3;
+    display: flex;
+}
+
 .drum-pad {
     background-color: grey; 
-    margin-top: 10px; 
+    /* margin-top: 10px;  */
     box-shadow: black 3px 3px 5px;
     height: 80px;
     width: 100px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
     
+}
+.drum-pad > * {
+   margin: auto;
 }
 .pad-bank {
     display: grid;
     grid-template-columns: auto auto auto;
     text-align: center;
-    width: 40%;
+    width: 45%;
+    margin: 20px;
+    gap: 10px;
 }
 
+#display {
+    width: 200px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 5px;
+    /* margin: 15px auto; */
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: block;
+}
 
+.controls-container {
+    width: 50%;
+    height: 272px;
+    /* display: block; */
+    margin: 0 10px;
+    /* vertical-align: top; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner{
+    width: 23px;
+    height: 19px;
+    background: blue;
+    border: 1px solid black;
+    box-sizing: border-box;
+    /* cursor: pointer; */
+}
+
+.select {
+    display: block;
+    border: 1px solid black;
+    width: 50px;
+    height: 20px;
+    padding: 1px;
+    background-color: black;
+    justify-self: center;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.on-off{
+    margin: 0;
+}
